@@ -1,0 +1,343 @@
+master 
+modified
+3) add new line master 26-04
+2) add new line  master  20-04
+1) add new line to  master  20-04
+
+add new line to fix branch 
+
+ https://www.youtube.com/watch?v=O00FTZDxD0o - course by git
+git+idea
+https://javarush.com/groups/posts/2818-podruzhim-git-s-intellij-idea
+https://javarush.com/groups/posts/2683-nachalo-rabotih-s-git-podrobnihy-gayd-dlja-novichkov
+
+
+https://habr.com/ru/articles/522078/
+https://gist.github.com/gunaevart/a38cec5803153c85b13931e57a83edec#file-git-bash
+
+https://www.youtube.com/watch?v=W4hoc24K93E&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb
+https://www.youtube.com/watch?v=O00FTZDxD0o
+baranovk@kho-7162-nb MINGW64 ~/Desktop/Курсы/Java automation/20/GitTraning
+--------------------------------------------------------------------------
+переход в нужную папку
+//cd "c:Users\denys\Desktop\newGitProject"
+-------
+
+github
+testqaplus1@gmail.com
+Compot135
+----
+*т.к.не получалось тут хрень написал чтоб токен не считан біл*
+--------------------------------------------
+
+git
+
+https://www.youtube.com/watch?v=W4hoc24K93E&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb
+---
+git+ intellig
+https://www.youtube.com/watch?v=C2EKVX5EvxI&list=PLBUU0jzICd0jKxLqDG2N_b71F-kt4NaHz&index=1
+
+-- directory
+cd "c:Users\denys\Desktop\GitTest"
+
+1. Просмотр логина и имени пользователя в Git
+Чтобы увидеть текущий логин и имя пользователя, используйте следующую команду:
+
+git config --global user.name  //Kirill Baranov
+
+git config --global user.email //testqaplus1@gmail.com
+
+2. Create branch
+git checkout -b nameNewBranch
+git checkout -d nameNewBranch  --удаление ветки
+git checkout NameDranch --switch branch
+
+
+---
+ветка соединяется в ту, на которой мі находимся, т.е. otherBranch  в мастер
+git checkout mastermaster
+git marge otherBranch  
+---
+
+--создание проекта 
+1) mkdir nameProject
+
+2) cd nameProject
+
+cd - сменить текущий каталог 
+nameProjectgit  - перейти в подкаталог
+
+
+3) git init - проинициализировать проект гит 
+
+ls   -просмотр файлов (скрітіх ls -a)
+
+cd ~  -вернутся в корневой каталог
+
+ mv newGitProject  Desktop  -- newGitProject  папку newGitProject  перенести на рабочий стол
+
+4)Установка имени и міло
+git config user.name "baranov-kirill"
+git config user.email testqaplus1@gmail.com
+ 
+ 
+ 5) create file
+  Создайте файл для репозитория.
+
+touch .gitignore
+
+
+----Настройки
+cat .git/config  -просмотр настроек
+
+--system  -сисьемніе настройки
+
+--global -на уровне пользователя настройки C:/Users/<username>/.gitconfig>
+--local - (default) <project/.git/config>
+
+просмотр
+git config -h  --вівод опций и описаний
+cat .git/config
+git config --list
+git config --list --global
+cat ~/.gitconfig
+-------------------------------------------------------------------------
+git --version
+
+-Work Directory
+cd "C:\Users\baranovk\Desktop\Курсы\Java automation\20\GitTraning"
+cd .. (на уровень выше)
+
+
+-print working directory
+pwd
+
+- create new folder
+mkdir my-project
+
+-create new file
+echo "Some text" > file.txt
+
+- список файлов в папке
+ls
+ls -la (скрытые)
+
+
+-чтение файла
+cat file.txt
+
+-удаление файла
+rm file.yxt
+
+--- Как просмотреть все каталоги в Git Bash ---
+ls
+ls-a (скрытые)
+
+- Как удалить папку
+ rmdir "NameProject"
+
+- настройки бывают
+-- system
+--global
+--local
+
+- очистка директории Untracked 
+git clean -i
+
+
+--- Установка ---
+gitconfig - утиліта для виведення та зміни конфігурації для роботи Gitта зовнішнього вигляду. Рівні конфігурації :
+•Рівеньсистеми: спільнідля всіхкористувачів--system
+•Рівенькористувача: налаштуванняконкретного користувача--global.
+•Рівень проекту :(.git/config)у репозиторії проекту.
+Налаштуванняна кожному наступномурівніперекриваютьналаштуванняз попередніхрівнів. Тобтозначенняв .git/configперекриваютьконфігураціюрівнясистеми.
+
+git config user.name "Name"
+git config user.email "testqaplus1@gmail.com"
+
+git config --global user.name "Name"
+
+- просмотр настроек
+git config --list
+
+- просмотр настроек глобал
+git config --list --global
+
+---
+сat ~/.gitconfig
+---
+
+- Просмотр настроек
+ cat .git/config
+git config --list  //global
+
+- Delete
+git config --unset user.name
+ git config --unset user.email
+
+всю секцию
+git config --remove-section user
+
+git config --global core.editor ""
+
+- Использование Notepad++ в качестве редактора
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+- Установка алиас
+git config --global alias.c config //(вместо config --> c установили)
+
+- Просмотр команд config 
+git config -h
+git help config
+
+---Статусы отслеживания---
+1.Untracked (неотслеживаемый)
+2. unmodified (немодифицированный)
+3. Modified (модифицированный)
+4. Staged (подготовленный)
+
+--- Типы объектов в GIT---
+1. Blob файл
+2. Tree пака
+3. Commit коммит
+4. Annotated Tag аннотированный тег
+---------------
+•git init–створюєрепозиторій
+•git add –додаєфайлидо індексудля наступногокоміту.
+•git commit–використовуєтьсядля фіксаціїзміну репозиторії.
+•git diff–відображеннязмін.
+•git status–виведеннястану файлів.
+•git log–використовуєтьсядля виведенняісторіїкомітів.
+•git help–виведеннядовідки,githelp<command>-введеннядоступнихопційвикористаннякоманди.
+
+
+
+---------
+-create new repozitory
+
+git init
+автоматически создается папка .git
+
+-переименовать ветку
+git branch -m <name> (только после того как будет хоть один комит)
+
+-Области гита
+1. working directory рабочая
+2. staging area индекс
+3. repository репозиторий 
+
+- просмотр текущего статуса репозитория
+git status
+
+-подготовка файла в staging area
+git add 'fileForGit.txt'
+git add. //all files
+
+- Cоздание коммита
+git commit -m "<add word in file fileForGit>"
+
+- Search log об изминениях 
+git log
+
+-перейти к определенной версии
+git checkout <commit hash>
+git checkout <df68a4523044fcfb5c8805a68aa49995ebfc7f09> or <branch name>
+
+-расшифровка хеша имени комита
+git cat-file -t  6cc02dc // commit
+git cat-file -p  6cc02dc // где будет указана более подробная инфаавтор мыло...
+
+- просмотр дерева
+ git cat-file -t 92e4fc37  //что это за объект
+ git cat-file -p 92e4fc37 // содержимое дерева
+
+- delete file
+rm first-file.txt
+
+-Переход на коммит
+git checkout 6cc02dc3201e48 (6cc02dc3201e48 - хеш ветки)
+git checkout master (на мастер ветку)
+
+----Ветки  - ссылка на определенный коммит--
+
+- Search branch
+git branch
+
+- Create branch
+git branch <branchName>
+
+- Создание ветки и переход на нее
+
+a) git branch <branchName>
+git checkout <branchName>
+OR
+b) Создание и переход на ветку 
+git checkout -b <branchName>
+
+- Переименование ветки
+git branch -m <NEW_branchName>
+
+- Delete branch
+git branch -d <branchName>
+*** но текущую ветку не получится удалить
+
+
+
+--- Слияние веток ---
+ git merge -m "Merging new-feature into mainTest" new-feature // нужно находится в ветке в которую будет добавляться ветка
+
+
+- Слияние другой ветки (feature branch) в текущую ветку(reciving branch). Нужно находится в ветке, 
+которая будет принимать другую ветку. (Пример: находимся в мастере, и к мастеру присоединяем ветку: вторая-ветка) 
+git merge <Feature branch name>
+
+-Удаление ветки
+Чтоб удалить ветку, нужно находится в другой (т.е. удалаем ветку 1, то должны находится в другой ветке)
+
+
+--- Сервисы Хостинга ---
+
+- origin - имя удаленного репозитор по-умолчанию
+git push - lokal -> repoz . Загрузка изминений из локал ветки в ветку удален репозитор
+git pull - repoz -> lokal . Загрузка изминений из ветки удален репозитор в локал ветку
+
+- Подключение удален репозитория
+git remote add origin <url>  // где origin имя удален репозитория  
+
+- Клонирование удаленного репозитор в локальный
+git clone <url>
+
+- просмотр веток в удален. репозитор
+git branch -a
+
+- Загрузка изминений из локал. ветки в удаленную с созданием связи между ними
+1) делается при первом связывании
+git push -u origin <branch> // origin - название удален сервера (на какой грузим), <branch> - имя удаленной ветки в которую грузим
+2) в дальнейшем просто git push
+
+-  Скачиваем ветку
+git pull
+
+
+1. git clone https://github.com/bstashchuk/docker.git
+
+2. cd docker
+3.  git branch
+4. ls
+5. git status
+6. git remote -v // проверка настроек удаленного сервера
+
+
+origin  https://github.com/bstashchuk/docker.git (fetch)  // origin  -название удален сервера
+origin  https://github.com/bstashchuk/docker.git (push)
+7. git branch -vv // локал ветка связана с удаленн
+
+
+
+
+Связанные термины
+git status: Всегда хорошая идея: эта команда показывает, в какой ветке вы находитесь, какие файлы находятся в рабочем или промежуточном каталоге, а также любую другую важную информацию.
+git checkout [branch-name]: переключается на указанную ветку и обновляет рабочий каталог.
+git  it -m "descriptive message": снимки файлов постоянно сохраняются в истории версий.
+git push: загружает все коммиты локальной ветки на удаленную.
+-------------------
