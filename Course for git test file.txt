@@ -25,7 +25,7 @@ baranovk@kho-7162-nb MINGW64 ~/Desktop/Курсы/Java automation/20/GitTraning
 
 github
 testqaplus1@gmail.com
-Compot135
+
 ----
 *т.к.не получалось тут хрень написал чтоб токен не считан біл*
 --------------------------------------------
